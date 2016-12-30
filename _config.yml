@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "Android, jungletian"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -38,8 +38,8 @@ seo: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories
-  #about: /about
+  categories: /categories
+  about: /about
   archives: /archives
   tags: /tags
   #sitemap: /sitemap.xml
@@ -71,9 +71,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
-#scheme: Pisces
+# scheme: Muse
+# scheme: Mist
+scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -133,9 +133,11 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
-
+social:
+  GitHub: https://github.com/JungleTian
+  Twitter: https://twitter.com/JungleTian
+  Weibo: http://weibo.com/u/5183549756
+  Instagram: https://www.instagram.com/zhangtitanjum/
 
 # Social Links Icons
 # Icon Mapping:
@@ -149,13 +151,15 @@ social_icons:
   GitHub: github
   Twitter: twitter
   Weibo: weibo
+  Instagram: instagram
 
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
 #avatar:
-
+#你的头像url
+avatar: "/images/avatar.jpg"
 
 # Table Of Contents in the Sidebar
 toc:
@@ -210,6 +214,24 @@ sidebar:
 # Post Settings
 # ---------------------------------------------------------------
 
+
+# Custom Logo.
+# !!Only available for Default Scheme currently.
+# Options:
+#   enabled: [true/false] - Replace with specific image
+#   image: url-of-image   - Images's url
+custom_logo:
+  enabled: false
+  image:
+
+
+# Code Highlight theme
+# Available value:
+#    normal | night | night eighties | night blue | night bright
+# https://github.com/chriskempson/tomorrow-theme
+highlight_theme: night
+
+
 # Automatically scroll page to section which is under <!-- more --> mark.
 scroll_to_more: true
 
@@ -259,16 +281,16 @@ post_copyright:
 # Options:
 #   enabled: [true/false] - Replace with specific image
 #   image: url-of-image   - Images's url
-custom_logo:
-  enabled: false
-  image:
+# custom_logo:
+  # enabled: false
+  # image:
 
 
 # Code Highlight theme
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+# highlight_theme: normal
 
 
 # ---------------------------------------------------------------
@@ -281,6 +303,13 @@ mathjax:
   per_page: false
   cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
+# language: default
+language: zh-Hans
+# language: fr-FR
+# language: zh-hk
+# language: zh-tw
+# language: ru
+# language: de
 
 # Swiftype Search API Key
 #swiftype_key:
@@ -357,7 +386,7 @@ duoshuo_info:
   ua_enable: true
   admin_enable: false
   user_id: 0
-  #admin_nickname: Author
+  admin_nickname: jungletian
 
 
 # Facebook SDK Support.

@@ -36,9 +36,20 @@
           {{ list_categories() }}
         </div>
       </div>
+
+      {% elif page.type === 'about' %}
+         {{ page.content }}
+      <div class="comments" id="comments">
+           <div class="ds-thread" data-thread-key="{{ page.path }}"
+                data-title="{{ page.title }}" data-url="{{ page.permalink }}">
+           </div>
+       </div>
+
+
     {% else %}
       {{ page.content }}
     {% endif %}
+
   </div>
 
 {% endblock %}
@@ -46,3 +57,9 @@
 {% block sidebar %}
   {{ sidebar_template.render(false) }}
 {% endblock %}
+
+{% block comment_system %}
+  {% include '_scripts/comments/duoshuo.swig' %}
+  {% include '_scripts/comments/disqus.swig' %}
+{% endblock %}
+
