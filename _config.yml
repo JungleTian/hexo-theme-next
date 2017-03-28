@@ -134,8 +134,8 @@ font:
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
-  GitHub: https://github.com/JungleTian
-  Twitter: https://twitter.com/JungleTian
+  GitHub: https://github.com/jungletian
+  Twitter: https://twitter.com/jungletian
   Weibo: http://weibo.com/u/5183549756
   Instagram: https://www.instagram.com/zhangtitanjum/
 
